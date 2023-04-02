@@ -5,9 +5,10 @@ let date = new Date(),
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
 
-console.log(date, currYear, currMonth);
+const months = ["January", "February", "March", "April", "May", "June", "July", 
+                "August", "September", "October", "November", "December"];
 
 const renderCalendar = () => {
-    currentDate.innerText = '${currMonth} ${currYear}';
+    currentDate.innerText = `${months[currMonth]} ${currYear}`;
 }
-renderCalender();
+renderCalendar();
