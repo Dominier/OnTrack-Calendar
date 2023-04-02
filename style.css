@@ -1,0 +1,38 @@
+body{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #404040;
+    font-family: monospace; 
+    box-shadow: 20px;
+    
+
+    
+}
+
+.container{
+    width: 450px; 
+    background: #2d2f30;
+}
+.container header{
+    color: #fefeff;
+    display: flex; 
+    align-items: center;
+    padding: 25px 30px 10px; 
+    justify-content: space-between; 
+
+}
+header .currentDate{
+    font-size: 1.45rem;
+    font-weight: 500; 
+    
+}
+
+.calendar ul{
+    color: #00e3b7;
+    display: flex; 
+    list-style: none; 
+    flex-wrap: wrap;
+}
+
