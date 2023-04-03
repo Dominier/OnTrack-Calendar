@@ -10,6 +10,10 @@ const months = ["January", "February", "March", "April", "May", "June", "July",
                 "August", "September", "October", "November", "December"];
 
 const renderCalendar = () => {
+
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
+    currentDate.style.fontSize = '1.45rem';
+    currentDate.style.fontWeight = 'bold';
+    
 }
 renderCalendar();

@@ -1,9 +1,10 @@
 body{
-    display: flex; 
+    display: flex;    
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #404040;
+    background: rgb(237,246,19);
+    background: linear-gradient(to bottom right, rgba(237,246,19,1) 0%, rgba(121,9,111,1) 42%, rgba(0,255,248,1) 94%);
     font-family: monospace; 
     box-shadow: 20px;
 }
@@ -68,6 +69,7 @@ header .arrowIcons span:hover{
 }
 .calendar ul li{
     position: relative;
+    right: 13px; 
     width: calc(100% / 7);
 }
 .days li.inactive{
