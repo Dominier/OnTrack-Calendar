@@ -6,14 +6,12 @@ body{
     background: #404040;
     font-family: monospace; 
     box-shadow: 20px;
-    
-
-    
 }
 
 .container{
     width: 450px; 
     background: #2d2f30;
+    border-radius: 5%; 
 }
 .container header{
     color: #fefeff;
@@ -24,15 +22,71 @@ body{
 
 }
 header .currentDate{
+    
     font-size: 1.45rem;
     font-weight: 500; 
     
 }
-
+header .arrowIcons span{
+    height: 38px; 
+    width: 38px;
+    margin: 0 1px; 
+    cursor: pointer; 
+    text-align: center; 
+    line-height: 38px; 
+    border-radius: 50%; 
+    transition: all .2s ease-in-out;
+}
+header .arrowIcons span:hover{
+    transform: scale(1.3);
+    background: #00e3b7;
+}
+.calendar{
+    padding: 20px; 
+}
 .calendar ul{
     color: #00e3b7;
     display: flex; 
     list-style: none; 
     flex-wrap: wrap;
+    text-align: center; 
 }
-
+.calendar .days{
+    margin-bottom: 20px;
+}
+.calendar .weeks li{
+    
+    font-size: 15px;
+    font-weight: 500; 
+}
+.calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px; 
+    transition: all .2s ease-in-out;
+    
+}
+.calendar ul li{
+    position: relative;
+    width: calc(100% / 7);
+}
+.days li.inactive{
+    color: #aaa;
+}
+.calendar .days li::before{
+    position: absolute; 
+    content: "";
+    height: 40px; 
+    width: 40px; 
+    top: 50%; 
+    left: 50%; 
+    z-index: -1;
+    border-radius: 50%; 
+    transform: translate(-50%, -50%);
+}
+.days li:hover::before{
+    background: #20B2AA;
+}
+.days li.active::before{
+    background:#888888	;
+}
