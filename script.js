@@ -41,6 +41,16 @@ prevNextIcon.forEach(icon => {
     icon.addEventListener("click", () => { // add click event on both arrow icons
         // Changes months depending on arrow clicked
         currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+        if (currMonth < 0 || currMonth > 11) { // if currMonth is less than 0 or greater than 11
+            // creating a new date of current year & month and pass it as a date value
+            date = new Date(currYear, currMonth);
+            currYear = date.getFullYear(); // updating current year
+            currMonth = date.getMonth(); // updating current month
+        } else { // else pass new Date as date value
+            date = new Date();
+        }
+
         renderCalendar();
     });
 });
