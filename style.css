@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;    
     align-items: center;
     justify-content: center;
@@ -9,12 +9,12 @@ body{
     box-shadow: 20px;
 }
 
-.container{
+.container {
     width: 450px; 
     background: #2d2f30;
     border-radius: 5%; 
 }
-.container header{
+.container header {
     color: #fefeff;
     display: flex; 
     align-items: center;
@@ -22,13 +22,13 @@ body{
     justify-content: space-between; 
 
 }
-header .currentDate{
+header .current-date {
     
     font-size: 1.45rem;
     font-weight: 500; 
     
 }
-header .arrowIcons span{
+header .arrowIcons span {
     height: 38px; 
     width: 38px;
     margin: 0 1px; 
@@ -38,7 +38,7 @@ header .arrowIcons span{
     border-radius: 50%; 
     transition: all .2s ease-in-out;
 }
-header .arrowIcons span:hover{
+header .arrowIcons span:hover {
     transform: scale(1.3);
     background: #00e3b7;
 }
